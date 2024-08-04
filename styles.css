@@ -1,0 +1,170 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #e74c3c; /* Red */
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3498db; /* Blue */
+    border-radius: 5px;
+}
+
+main {
+    padding: 2em;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.subscribe-section, .contact, .testimonials {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.subscribe-section h2, .contact h2, .testimonials h2 {
+    color: #2ecc71; /* Green */
+}
+
+.subscribe-button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #e74c3c; /* Red */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: #c0392b; /* Darker Red */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1em;
+    width: 80%;
+    max-width: 400px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #3498db; /* Blue */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9; /* Darker Blue */
+}
+
+.testimonial {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #e74c3c; /* Red */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-links {
+    margin-top: 1em;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #2ecc71; /* Green */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .subscribe-button, form input, form textarea {
+        width: 90%;
+    }
+}
